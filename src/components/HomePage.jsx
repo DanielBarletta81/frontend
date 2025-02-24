@@ -18,18 +18,20 @@ const HomePage = () => {
         boxShadow: '0 0 20px rgba(0,0,0,0.1)'
       }}
     >
-    <Image 
-      src={chanelImage}
-        fluid
-        className="homepage-image"
-        style={{
-          width: '100%',
-          height: '50vh',
-          objectFit: 'cover',
-          marginBottom: '2rem',
-          borderRadius: '8px'
-        }}
-      />
+    <Row className="mb-4">
+        <Col>
+          <Image
+            src={chanelImage}
+            fluid
+            className="w-100"
+            style={{
+              maxHeight: '400px',
+              objectFit: 'cover',
+              borderRadius: '8px'
+            }}
+          />
+        </Col>
+      </Row>
     
       <h1 className="display-4">Welcome to The E-Commerce App</h1>
       <p className="lead">Discover amazing products at great prices!!!</p>
