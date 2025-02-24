@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Button, Card, Row, Col } from 'react-bootstrap';
+import { Container, Button, Card, Row, Col, Image } from 'react-bootstrap';
 import './HomePage.css';
+import chanelImage from '../img/chanel.jpg';
 
 const HomePage = () => {
   return (
@@ -17,6 +18,19 @@ const HomePage = () => {
         boxShadow: '0 0 20px rgba(0,0,0,0.1)'
       }}
     >
+    <Image 
+      src={chanelImage}
+        fluid
+        className="homepage-image"
+        style={{
+          width: '100%',
+          height: '50vh',
+          objectFit: 'cover',
+          marginBottom: '2rem',
+          borderRadius: '8px'
+        }}
+      />
+    
       <h1 className="display-4">Welcome to The E-Commerce App</h1>
       <p className="lead">Discover amazing products at great prices!!!</p>
       
